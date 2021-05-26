@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item android:id="@+id/menu_plants"
+        android:icon="@drawable/circle_ic"
+        android:title="Plants"/>
+
+    <item android:id="@+id/menu_seeds"
+        android:icon="@drawable/circle_ic"
+        android:title="Seeds"/>
+
+    <item android:id="@+id/menu_medicinalplants"
+        android:icon="@drawable/circle_ic"
+        android:title="Medicinal plants"/>
+
+    <item android:id="@+id/menu_vegetable"
+        android:icon="@drawable/circle_ic"
+        android:title="Vegetable"/>
+
+    <item android:id="@+id/menu_winterplants"
+        android:icon="@drawable/circle_ic"
+        android:title="Winter Plants"/>
+
+    <item android:id="@+id/soil_and_fertilizers_id"
+        android:icon="@drawable/circle_ic"
+        android:title="Soil and Fertilizer"/>
+
+    <item android:id="@+id/menu_myorders"
+        android:icon="@drawable/circle_ic"
+        android:title="My Orders"/>
+
+    <item android:id="@+id/menu_contactus"
+        android:icon="@drawable/circle_ic"
+        android:title="Contact Us"/>
+
+    <item android:id="@+id/menu_aboutus"
+        android:icon="@drawable/circle_ic"
+        android:title="About Us"/>
+
+
+    <item android:id="@+id/menu_pricing"
+        android:icon="@drawable/circle_ic"
+        android:title="Pricing"/>
+
+    <item android:id="@+id/menu_logout"
+        android:icon="@drawable/circle_ic"
+        android:title="Logout"/>
+</menu>

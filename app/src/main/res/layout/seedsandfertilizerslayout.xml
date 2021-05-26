@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cig_id"
+        android:layout_width="94dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="274dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cig_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/price_id"
+        android:layout_width="273dp"
+        android:layout_height="39dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/name_id"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/cig_id"
+        app:layout_constraintTop_toBottomOf="@+id/name_id" />
+
+    <TextView
+        android:id="@+id/seeds_qty_id"
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/price_id"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toEndOf="@+id/cig_id"
+        app:layout_constraintTop_toBottomOf="@+id/price_id" />
+
+    <TextView
+        android:id="@+id/details_id"
+        android:layout_width="249dp"
+        android:layout_height="89dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/seeds_qty_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seeds_qty_id"
+        app:layout_constraintTop_toBottomOf="@+id/seeds_qty_id" />
+
+    <TextView
+        android:id="@+id/category_id"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/details_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_id"
+        app:layout_constraintTop_toBottomOf="@+id/details_id" />
+
+    <TextView
+        android:id="@+id/quantity_id"
+        android:layout_width="265dp"
+        android:layout_height="38dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/category_id"
+        app:layout_constraintTop_toBottomOf="@+id/category_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

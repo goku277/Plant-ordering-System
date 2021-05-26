@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title="Plant Ordering System"
+            app:titleTextColor="@color/cardview_light_background"
+            android:background="#00C853" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/summer_plants_id"
+                    android:text="Summer Plants"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center_vertical" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/summer_recycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/summer_plants_id"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/all_seasonal_plants_id"
+                    android:text="All Seasonal Plants"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#000"
+                    app:layout_constraintTop_toBottomOf="@+id/summer_recycler_id"
+                    android:gravity="center_vertical" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/all_season_recycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/all_seasonal_plants_id"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView15"
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/all_season_recycler_id">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/plants_id"
+                            android:layout_width="166dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/plant_splash"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Plants"
+                            android:id="@+id/plants_text_id"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/plants_id" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView16"
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/cardView15">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/seeds_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="93dp"
+                            android:src="@drawable/seeds"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Seeds"
+                            android:id="@+id/seeds_text_id"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/seeds_id" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView17"
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView15"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/cardView15"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView15">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/winter_id"
+                            android:layout_width="167dp"
+                            android:layout_height="97dp"
+                            android:src="@drawable/winter_plants"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/winter_text_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Winter Plants"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/winter_id" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="4dp"
+                    android:id="@+id/cv_11"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView16"
+                    app:layout_constraintStart_toStartOf="@+id/cardView16"
+                    app:layout_constraintTop_toTopOf="@+id/cardView17">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/gardening_id"
+                            android:layout_width="134dp"
+                            android:layout_height="85dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/gardening_tools"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.516"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/gardening_text_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gardening tools"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/gardening_id"
+                            android:gravity="center_horizontal" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView18"
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView17"
+                    app:layout_constraintStart_toStartOf="@+id/cardView17"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView17">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/medicinal_id"
+                            android:layout_width="161dp"
+                            android:layout_height="89dp"
+                            android:src="@drawable/medicinal_plants"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/medicinal_text_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Medicinal Plants"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/medicinal_id" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="4dp"
+                    android:id="@+id/cardView25"
+                    app:layout_constraintEnd_toEndOf="@+id/cv_11"
+                    app:layout_constraintStart_toStartOf="@+id/cv_11"
+                    app:layout_constraintTop_toTopOf="@+id/cardView18">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:id="@+id/vegetable_id"
+                            android:layout_width="162dp"
+                            android:layout_height="89dp"
+                            android:src="@drawable/vegetable"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/vegetable_text_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Vegetable"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            app:layout_constraintTop_toBottomOf="@+id/vegetable_id"
+                            tools:layout_editor_absoluteX="4dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/empty_text_id"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView25"/>
+
+                <FrameLayout
+                    android:id="@+id/flFragment"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toTopOf="@+id/empty_text_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:alpha="0.7"
+                    android:background="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="@+id/empty_text_id"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/flFragment"
+                    app:menu="@menu/bottom_nav_menu" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="183dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start" >
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

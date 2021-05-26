@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "863258722860",
+    "project_id": "platorder",
+    "storage_bucket": "platorder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863258722860:android:0eeb0e7e236567cb508789",
+        "android_client_info": {
+          "package_name": "com.goku277.plantorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863258722860-9uthddah14codke2o6b5q2kr0bf8scms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goku277.plantorder",
+            "certificate_hash": "a96b51b131b1063cba67867ff7931d19e48f8260"
+          }
+        },
+        {
+          "client_id": "863258722860-o7ml8e0kpt0rs8rdjv5bd60hdu4tlub3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN8u_Ne4m__wnlMo-51xHhO9Q5Abq1kBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863258722860-o7ml8e0kpt0rs8rdjv5bd60hdu4tlub3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

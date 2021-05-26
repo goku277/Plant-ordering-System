@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="25dp"
+    tools:context=".Components.Pricing">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pricing_id"
+        android:textColor="#304FFE"
+        android:lineSpacingExtra="2dp"
+        android:textSize="18sp"
+        android:padding="7dp"/>
+
+</ScrollView>

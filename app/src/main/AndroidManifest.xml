@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goku277.plantorder">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Components.Pricing"></activity>
+        <activity android:name=".Components.AboutUs" />
+        <activity android:name=".Components.ContactUs" />
+        <activity android:name=".Components.PlaceOrder" />
+        <activity android:name=".Components.SeedsAndFertilizers" />
+        <activity android:name=".Components.AddToCart" />
+        <activity android:name=".Components.Profile" />
+        <activity android:name=".Components.UpdateorDelete" />
+        <activity android:name=".Components.CategoricalData" />
+        <activity android:name=".Components.CollapsingToolbar" />
+        <activity android:name=".Credentials.Signup" />
+        <activity android:name=".Components.Users" />
+        <activity android:name=".Components.Admin" />
+        <activity android:name=".Credentials.SplashForAll" />
+        <activity android:name=".Credentials.Signin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
